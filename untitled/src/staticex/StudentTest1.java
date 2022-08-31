@@ -8,7 +8,12 @@ public class StudentTest1 {
         Student studentT = new Student();
         System.out.println(studentT.studentID);
 
-        System.out.println(studentJ.serialNum);
-        System.out.println(studentT.serialNum);
+        /*
+        instance 변수로 serialNum을 출력하는 것보다 class로 하는 것이 보편적
+         */
+//        System.out.println(studentJ.serialNum);
+//        System.out.println(studentT.serialNum);
+//        System.out.println(Student.serialNum);
+        System.out.println(Student.getSerialNum());
     }
 }
