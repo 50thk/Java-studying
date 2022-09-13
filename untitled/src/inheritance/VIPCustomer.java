@@ -4,12 +4,23 @@ public class VIPCustomer extends Customer {
     private double saleRatio;
     private int agentID;
 
-    public VIPCustomer(int customerID, String customerName){
+    public VIPCustomer() {
+        customerGrade = "VIP";
+        bonusRatio = 0.05;
+        saleRatio = 0.1;
+    }
+    public VIPCustomer(int customerID, String customerName, int agentID){
         // super는 상위 클래스를 가리킴
         super(customerID, customerName);
         customerGrade = "VIP";
         bonusRatio = 0.05;
         saleRatio = 0.1;
+        this.agentID = agentID;
+    }
+
+    public int calcPrice(int price){
+        bonusPoint += price * bonusRatio;
+        return price - (int)(price * saleRatio);
     }
 
     public int getAgentID() {

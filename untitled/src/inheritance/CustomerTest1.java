@@ -10,7 +10,7 @@ public class CustomerTest1 {
 //        customerLee.setCustomerName("Lee");
 
         // 묵시적 상위클래스로의 형변환 - 업캐스팅, VIPCustomer 대신 Customer 가능
-        VIPCustomer customerKim = new VIPCustomer(10101, "Kim");
+        VIPCustomer customerKim = new VIPCustomer(10101, "Kim", 100);
 
 
         // System.out.println(customerLee.showCustomerInfo());

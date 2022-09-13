@@ -16,11 +16,10 @@ public class Customer {
     int bonusPoint; // default -> 같은 패키지 내
     protected double bonusRatio;
 
-/*    public Customer(){
+    public Customer(){
         customerGrade = "Silver";
         bonusRatio = 0.01;
     }
- */
     public Customer(int customerID, String customerName) {
         this.customerID = customerID;
         this.customerName = customerName;
