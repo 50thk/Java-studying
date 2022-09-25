@@ -18,4 +18,9 @@ public class CompleteCalc extends Calculator{
     public void showInfo() {
         System.out.println("Calc interface realize");
     }
+
+    @Override
+    public void description() {
+        System.out.println("Complete Calc");
+    }
 }
